@@ -1,38 +1,95 @@
 .App {
+  margin: 60px 100px;
+}
+
+header {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+main {
   display: flex;
   flex-direction: column;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 440px;
+  font-size: 12px;
 }
 
-.App-link {
-  color: #61dafb;
+.columns p {
+  margin-bottom: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.leftSide {
+  display: flex;
+  flex-direction: column;
+}
+
+.rightSide {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info {
+  color: #4b4b4bb3;
+  height: 17px;
+}
+
+.checkbox {
+  display: flex;
+  margin-bottom: 38px;
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form input {
+  width: 200px;
+  height: 40px;
+}
+
+input {
+  border: none;
+  border-bottom: 2px solid #4b4b4bb3;
+  background-color: #e9eaee;
+  margin-bottom: 15px;
+  color: black;
+  font-size: 18px;
+}
+
+.buttons {
+  width: 500px;
+  display: flex;
+  gap: 15px;
+  margin-top: 50px;
+}
+
+.buttons button {
+  width: 220px;
+  height: 55px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.leftButton {
+  border: 2px solid black;
+  background-color: #e9eaee;
+}
+
+.rightButton {
+  border: none;
+  background-color: #fa975a;
 }
